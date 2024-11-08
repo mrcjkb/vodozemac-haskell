@@ -69,6 +69,8 @@ library
     other-modules:
         Vodozemac.Raw.Util
     extra-libraries:  vodozemac_hs
+    build-depends:
+        inline-rust
 
 test-suite spec
     import:           common

@@ -6,6 +6,10 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    inline-rust = {
+      url = "github:ners/inline-rust";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     crane.url = "github:ipetkov/crane";
   };
 
@@ -49,6 +53,7 @@
         pkgs.haskell.packages;
       hpsFor = pkgs: { default = pkgs.haskellPackages; } // ghcsFor pkgs;
       overlay = lib.composeManyExtensions [
+        inputs.inline-rust.overlays.default
         (final: prev: {
           vodozemac_hs =
             let

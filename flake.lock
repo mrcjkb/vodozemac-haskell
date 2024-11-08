@@ -15,6 +15,43 @@
         "type": "github"
       }
     },
+    "inline-rust": {
+      "inputs": {
+        "language-rust": "language-rust",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1731077175,
+        "narHash": "sha256-1/9Je6n0EwV5KIOqdlLJOqVTDPhAomGCc1u5z0WYm9w=",
+        "owner": "ners",
+        "repo": "inline-rust",
+        "rev": "d8144087b6750b6cc62847795e6c80c789e59a5b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ners",
+        "repo": "inline-rust",
+        "type": "github"
+      }
+    },
+    "language-rust": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1729283594,
+        "narHash": "sha256-nVexe9Jrj0DtpjyPX+S2t/Op2iJyU1IRncW/BO8Ties=",
+        "owner": "GaloisInc",
+        "repo": "language-rust",
+        "rev": "ae59c7355b2fbbe818c1fdd23894df6bfa0432e5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "GaloisInc",
+        "repo": "language-rust",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1730200266,
@@ -34,6 +71,7 @@
     "root": {
       "inputs": {
         "crane": "crane",
+        "inline-rust": "inline-rust",
         "nixpkgs": "nixpkgs"
       }
     }
