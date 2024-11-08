@@ -44,33 +44,11 @@ library
     import:           common
     hs-source-dirs:   src
     exposed-modules:
-        Vodozemac.Account
+        Vodozemac
         Vodozemac.Curve25519PublicKey
-        Vodozemac.Ed25519PublicKey
-        Vodozemac.Ed25519Signature
-        Vodozemac.FallbackKey
-        Vodozemac.KeyId
-        Vodozemac.Megolm.GroupSession
-        Vodozemac.Megolm.InboundGroupSession
-        Vodozemac.Megolm.SessionKey
-        Vodozemac.Olm.Message
-        Vodozemac.Olm.Session
-        Vodozemac.Raw.Account
-        Vodozemac.Raw.Curve25519PublicKey
-        Vodozemac.Raw.Ed25519PublicKey
-        Vodozemac.Raw.Ed25519Signature
-        Vodozemac.Raw.FallbackKey
-        Vodozemac.Raw.KeyId
-        Vodozemac.Raw.Megolm.GroupSession
-        Vodozemac.Raw.Megolm.InboundGroupSession
-        Vodozemac.Raw.Megolm.SessionKey
-        Vodozemac.Raw.Olm.Message
-        Vodozemac.Raw.Olm.Session
-    other-modules:
-        Vodozemac.Raw.Util
-    extra-libraries:  vodozemac_hs
     build-depends:
-        inline-rust
+        inline-rust,
+        language-rust
 
 test-suite spec
     import:           common

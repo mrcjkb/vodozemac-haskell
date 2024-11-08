@@ -1,5 +1,6 @@
 .direnv
 .envrc
+.inline-rust
 dist-newstyle
 result
 result-*

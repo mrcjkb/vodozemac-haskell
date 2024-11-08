@@ -1,20 +1,5 @@
 {
   "nodes": {
-    "crane": {
-      "locked": {
-        "lastModified": 1730504891,
-        "narHash": "sha256-Fvieht4pai+Wey7terllZAKOj0YsaDP0e88NYs3K/Lo=",
-        "owner": "ipetkov",
-        "repo": "crane",
-        "rev": "8658adcdad49b8f2c6cbf0cc3cb4b4db988f7638",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ipetkov",
-        "repo": "crane",
-        "type": "github"
-      }
-    },
     "inline-rust": {
       "inputs": {
         "language-rust": "language-rust",
@@ -70,7 +55,6 @@
     },
     "root": {
       "inputs": {
-        "crane": "crane",
         "inline-rust": "inline-rust",
         "nixpkgs": "nixpkgs"
       }
