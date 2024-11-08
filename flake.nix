@@ -104,6 +104,7 @@
                   cabal-install
                   cargo
                   fourmolu
+                  rust-analyzer
                 ] ++ lib.optionals (lib.versionAtLeast (lib.getVersion hp.ghc) "9.2") [
                   hp.haskell-language-server
                 ];

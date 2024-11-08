@@ -3,7 +3,6 @@ module Vodozemac.Olm.Session where
 import Data.Aeson qualified as Aeson
 import Data.ByteString (ByteString)
 import Data.ByteString.Lazy qualified as LazyByteString
-import Data.ByteString.Unsafe qualified as ByteStrign
 import Data.ByteString.Unsafe qualified as ByteString
 import Data.Maybe (fromJust)
 import Foreign
@@ -41,4 +40,4 @@ decrypt (Session sess) message = do
             then pure Nothing
             else do
                 size' <- peek size
-                Just <$> ByteStrign.unsafePackCStringFinalizer ptr size' (Raw.free_bytestring ptr size')
+                Just <$> ByteString.unsafePackCStringFinalizer ptr size' (Raw.free_bytestring ptr size')
